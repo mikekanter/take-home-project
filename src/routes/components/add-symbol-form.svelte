@@ -105,7 +105,7 @@
     }}
   />
   <div>
-    <button type="submit" disabled={isAdding || !symbolName}>Create</button>
+    <button type="submit" disabled={isAdding || !symbolName}>Add</button>
     <button
       class="cancel"
       onclick={() => {
