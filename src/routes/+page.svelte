@@ -20,10 +20,7 @@
 
 <style>
   :global(:root) {
-    --lcd-turquoise-lightest: #40E0D0;
-    --lcd-turquoise-light: #3ACABB;
     --lcd-turquoise-normal: #33B3A6;
-    --lcd-turquoise-dark: #2D9D92;
     --lcd-turquoise-darkest: #26867D;
     --lcd-red: #d35211;
     --font-size: 18px;
