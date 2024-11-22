@@ -19,10 +19,12 @@
 </script>
 
 <div class="left-panel">
+  <div>
+  <h2>Watchlists</h2>
   {#if loading}
     <div>Loading watchlists. Please wait...</div>
   {:else}
-  <div style="margin-bottom:10px; padding-left: 10px; padding-right: 10px;">
+  <div style="margin-bottom:10px;">
     <AddWatchlistForm />
   </div>
     {#if $watchlists.length === 0}
@@ -35,6 +37,7 @@
       </div>
     {/if}
   {/if}
+  </div>
 </div>
 
 <style>
@@ -48,8 +51,10 @@
     grid-column: 1 / 2;
     overflow-y: scroll;
   }
-  .watchlist-list {
+  .left-panel > div {
     padding: 10px;
+  }
+  .watchlist-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;

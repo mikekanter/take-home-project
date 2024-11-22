@@ -50,6 +50,8 @@
 </script>
 
 <div class="stock-area">
+  <div>
+  <h2>Stocks</h2>
   {#if !$activeWatchlist}
       <div>No active watchlist. Please select a watchlist to view stocks.</div>
   {:else}
@@ -90,12 +92,19 @@
     </div>
 
   {/if}
+  </div>
 </div>
 
 <style>
 .stock-area {
   grid-area: stocks;
+  overflow-y: scroll;
 }
+
+.stock-area > div {
+  padding: 10px;
+}
+
 .stock-list > div {
   align-self: center;
 }
